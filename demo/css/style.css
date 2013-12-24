@@ -1,0 +1,21 @@
+<var:a=red>
+html {
+	background: <echo:a>;
+}
+<!
+$arr = array(
+	'1' => '#111',
+	'2' => '#555',
+	'3' => '#fff',
+	'4' => '#qqq',
+	'5' => '#aaa',
+	'6' => '#bbb',
+);
+!>
+<var:a=1>
+<while:a<=6>
+h<echo:a> {
+	color:<echo:arr[$a]>;
+}
+<!$a++;!>
+</while>
