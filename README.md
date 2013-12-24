@@ -5,7 +5,9 @@ Medz Css Service Beta V1
 
 MedzCss将css进行php化，目前包含的php语句有变量赋值，流程控制语句和function
 虽然大部分php代码未移植编译，但是MedzCss中提供了php原生嵌入
+
 标签如下：
+
 	1.<!!> : 原始php代码嵌入，同时支持<?php?>格式嵌入
 	2.<var:varName="Value"> : 变量赋值，等同于$varName = #Value
 	3.<if:expr> : if()条件判断语句开始
