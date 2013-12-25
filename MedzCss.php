@@ -61,13 +61,10 @@ Class MedzCss {
 	*/
 	private function compile() {
 		$path = CSSDIR . md5( $this->CssUrl ) . SUFFIX;
-		if( $this->is_file( $path ) && DEBUG == false ) {
-			return include $path;
-		} else {
+		if( !$this->is_file( $path ) || DEBUG == true ) {
 			$this->process( $this->CssUrl, $path );
-			return include $path;
 		}
-		return null;
+		return include $path;
 	}
 	
 	/*
